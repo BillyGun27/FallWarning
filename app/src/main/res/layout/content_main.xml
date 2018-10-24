@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/Device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Device Registered. Connect to Device to Use the App" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TesWarning"
+        android:text="Open Alert"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_action_phone"
+        android:onClick="SendMessage"
+        android:text="Connect to Device"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/configure"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_action_setting"
+        android:onClick="DeviceSetting"
+        android:text="Device Setting"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/location"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_action_name"
+        android:onClick="CheckLocation"
+        android:text="Check Family Location"
+        android:textColor="@color/colorPrimaryDark" />
+    <!--
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SMS Inbox"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <ListView android:id="@+id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp" />
+            -->
+</LinearLayout>
